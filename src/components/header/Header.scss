@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 100;
     box-shadow: 0 0 10px var(--cr-shadow-soft);
-    transition: .3s linear;
+    transition: .3s ease;
 
     .headerTop {
         background-color: var(--bg-header);
@@ -620,6 +620,7 @@
         height: 40px;
         position: relative;
         z-index: 90;
+        margin-top: -2px;
 
         .container {
             height: 100%;
