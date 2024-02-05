@@ -1,0 +1,9 @@
+.Error {
+    pointer-events: none;
+
+    .erroAnamtionProducts {
+        width: min(100%, 400px);
+        position: relative;
+        z-index: 10;
+    }
+}

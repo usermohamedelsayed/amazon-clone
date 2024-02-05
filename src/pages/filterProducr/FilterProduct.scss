@@ -1,0 +1,28 @@
+.FilterProduct {
+    margin-top: 110px;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 160px;
+    }
+
+    .container {
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+
+            @media screen and (max-width: 767px) {
+                font-size: 23px;
+            }
+        }
+
+        .desc {
+            font-size: 14px;
+            color: var(--cr-text-muted);
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 13px;
+            }
+        }
+    }
+}

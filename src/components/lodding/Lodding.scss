@@ -1,0 +1,9 @@
+.Lodding {
+    pointer-events: none;
+
+    .loddingAnamtionProducts {
+        width: min(100%, 400px);
+        position: relative;
+        z-index: 10;
+    }
+}

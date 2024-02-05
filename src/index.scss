@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Overpass:ital,wght@0,200;0,400;0,500;0,600;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+:root {
+  --bg-primary: #f8f8f8;
+  --bg-primary-soft: #fff;
+  --bg-secondary: #333;
+  --bg-secondary-soft: ;
+  --bg-header: #131921;
+  --bg-header-soft: #232f3e;
+  --bg-backDrop: #02020294;
+  --bg-backDrop-strong: #000000b9;
+
+  --cr-primary: orange;
+  --cr-primary-soft: #febd69;
+  --cr-primary-strong: #ec8600;
+  --cr-secondary: dodgerblue;
+  --cr-text: #333;
+  --cr-text-muted: #444;
+  --cr-placeholder: ;
+  --cr-border: #dfdfdd;
+  --cr-border-dark: #535353;
+  --cr-shadow: #4e4e4e52;
+  --cr-shadow-soft: #a5a5a552;
+  --cr-hover: #dfdfdf;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: .3s ease;
+  border: 1px solid var(--bg-header-soft);
+  box-shadow: inset 0 0 40px var(--bg-header-soft);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: var(--cr-text);
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+}
+
+.btnError,
+.btnInfo,
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .2s ease;
+  color: #fff;
+}
+
+.btn {
+  box-shadow: inset 0 0 100px var(--cr-primary);
+  border: 1px solid var(--cr-primary-strong);
+
+  &:hover {
+    background-color: var(--cr-primary-strong);
+  }
+}
+
+.btnError {
+  box-shadow: inset 0 0 100px crimson;
+  border: 1px solid red;
+
+  &:hover {
+    background-color: red;
+  }
+}
+
+.btnInfo {
+  box-shadow: inset 0 0 100px cornflowerblue;
+  border: 1px solid #0b60fd;
+
+  &:hover {
+    background-color: #0b60fd;
+  }
+}
+
+input,
+textarea {
+  &::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  font-family: 'Open Sans',
+  sans-serif;
+  font-family: 'Overpass',
+  sans-serif;
+  font-family: 'Poppins',
+  sans-serif;
+  color: var(--cr-text);
+}
+
+a {
+  color: var(--cr-text);
+
+  &:visited {
+    color: var(--cr-text);
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+input,
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Overpass', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  color: var(--cr-text);
+
+  &::placeholder {
+    color: var(--cr-placeholder);
+  }
+}
+
+.container {
+  width: min(100%, 1600px);
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0 10px;
+  }
+}
+
+.overlayStrong,
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  background-color: var(--bg-backDrop);
+  pointer-events: none;
+  opacity: 0;
+  transition: .2s ease;
+
+  &.active {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+
+.overlayStrong {
+  z-index: 101;
+  background-color: var(--bg-backDrop-strong);
+}

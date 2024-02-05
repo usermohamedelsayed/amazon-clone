@@ -1,0 +1,200 @@
+.Cart {
+    margin-top: 120px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 160px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr .3fr;
+        align-items: flex-start;
+        gap: 14px;
+
+        @media screen and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+
+        .wrapper-1,
+        .wrapper-2 {
+            background-color: var(--bg-primary-soft);
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px var(--cr-shadow);
+        }
+
+        .wrapper-1 {
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 7px;
+                border-bottom: 2px solid var(--cr-border);
+                margin-bottom: 20px;
+            }
+
+            .listCart {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .itemCart {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+                    border-bottom: 1px solid var(--cr-border);
+                    padding-bottom: 20px;
+
+                    &:last-child {
+                        padding-bottom: 0;
+                        border-bottom: none;
+                    }
+
+                    @media screen and (max-width: 767px) {
+                        flex-direction: column;
+                    }
+
+                    >div {
+                        display: flex;
+                        align-items: center;
+
+                        @media screen and (max-width: 767px) {
+                            flex-direction: column;
+                        }
+
+                        img {
+                            width: 100px;
+                            object-fit: contain;
+                            margin: 0 30px 0 20px;
+
+                            @media screen and (max-width: 767px) {
+                                width: 150px;
+                                margin-bottom: 15px;
+                            }
+                        }
+
+                        .details {
+                            .title {
+                                font-size: 17px;
+                                font-weight: 700;
+                            }
+
+                            .desc {
+                                font-size: 12px;
+                                color: var(--cr-text-muted);
+                            }
+
+                            .price {
+                                font-weight: 500;
+                                margin: 10px 0;
+
+                                span {
+                                    font-weight: 700;
+                                }
+                            }
+
+                            .qty {
+                                width: fit-content;
+                                display: flex;
+                                align-items: center;
+                                background-color: var(--bg-primary);
+                                padding-left: 10px;
+                                height: 40px;
+                                border: 1px solid var(--cr-border);
+                                box-shadow: 0 0 4px var(--cr-shadow);
+                                border-radius: 4px;
+                                user-select: none;
+
+                                .decreace,
+                                .increace {
+                                    height: 100%;
+                                    padding: 0 10px;
+                                    display: grid;
+                                    font-size: 25px;
+                                    font-weight: 600;
+                                    place-content: center;
+                                    cursor: pointer;
+                                    background-color: var(--bg-primary-soft);
+                                    margin: 10px;
+                                    border: 2px solid var(--cr-border);
+                                    border-bottom: 0;
+                                    border-top: 0;
+                                    transition: .2s ease;
+
+                                    &.increace {
+                                        margin-right: 0;
+                                    }
+
+                                    &:hover {
+                                        background-color: var(--cr-primary);
+                                    }
+                                }
+
+                                .amount {
+                                    font-size: 20px;
+                                    padding: 0 15px;
+                                }
+                            }
+
+                            button {
+                                padding: 10px 30px;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+
+                    .totalPrive {
+                        font-size: 20px;
+                        font-weight: 600;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .wrapper-2 {
+            .marked {
+                display: flex;
+                gap: 10px;
+
+                i {
+                    width: 30px;
+                    height: 30px;
+                    background-color: lime;
+                    border-radius: 50%;
+                    flex-shrink: 0;
+                    color: #fff;
+                    display: grid;
+                    place-items: center;
+                }
+
+                span {
+                    font-size: 12px;
+                    color: var(--cr-text-muted);
+                }
+            }
+
+            .totla {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 10px 0;
+
+                .price {
+                    font-weight: 600;
+                }
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .btnError {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    }
+}
