@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.92caba15.css",
-    "main.js": "/static/js/main.4a4f8efd.js",
+    "main.css": "/static/css/main.3918c02e.css",
+    "main.js": "/static/js/main.bac2bb09.js",
     "static/media/Mohamed_Elsayed.jpg": "/static/media/Mohamed_Elsayed.a9af27f613c6295b5a4b.jpg",
     "static/media/banner3.jpg": "/static/media/banner3.eacee69255e761faf7b0.jpg",
     "static/media/banner4.jpg": "/static/media/banner4.2955a9635d59f35bbea7.jpg",
@@ -10,11 +10,11 @@
     "static/media/banner1.jpg": "/static/media/banner1.577fb51e3cb5efa8079a.jpg",
     "static/media/banner5.jpg": "/static/media/banner5.a166a350249af0275ed2.jpg",
     "index.html": "/index.html",
-    "main.92caba15.css.map": "/static/css/main.92caba15.css.map",
-    "main.4a4f8efd.js.map": "/static/js/main.4a4f8efd.js.map"
+    "main.3918c02e.css.map": "/static/css/main.3918c02e.css.map",
+    "main.bac2bb09.js.map": "/static/js/main.bac2bb09.js.map"
   },
   "entrypoints": [
-    "static/css/main.92caba15.css",
-    "static/js/main.4a4f8efd.js"
+    "static/css/main.3918c02e.css",
+    "static/js/main.bac2bb09.js"
   ]
 }
