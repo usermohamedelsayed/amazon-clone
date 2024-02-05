@@ -12,29 +12,7 @@ import {
   ProductDetails,
   ResultSearch,
 } from "./pages";
-const handleScrollHeader = () => {
-  let prevScrollY = window.scrollY;
-  let refHeader = document.querySelector(".Header");
-  window.addEventListener("scroll", () => {
-    let currScrollY = window.scrollY;
-    if (window.scrollY >= 130) {
-      if (prevScrollY > currScrollY) {
-        refHeader.style.top = 0;
-      } else {
-        if (document.body.clientWidth <= 767) {
-          refHeader.style.top = "-50px";
-        } else {
-          refHeader.style.top = "-59px";
-        }
-      }
-      prevScrollY = currScrollY;
-    }
-  });
-};
 const App = () => {
-  useEffect(() => {
-    handleScrollHeader();
-  }, []);
   const layout = () => {
     return (
       <>
