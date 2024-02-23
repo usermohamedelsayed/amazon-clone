@@ -15,7 +15,7 @@ import emptycontainer from "../../animation/emptycontainer.json"
 import { IoMdClose } from 'react-icons/io';
 // Images
 import imgEgypt from "../../assest/EgyptIcon.jpg"
-import imgUser from "../../assest/Mohamed_Elsayed.jpg"
+import imgUser from "../../assest/favicon.jpg"
 // Redux
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCategoriesProducts } from '../../redux/categoriesSlice';

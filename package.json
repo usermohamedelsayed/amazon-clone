@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@np/react-lottie-player": "^3.5.3",
     "@nivo/geo": "^0.84.0",
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
